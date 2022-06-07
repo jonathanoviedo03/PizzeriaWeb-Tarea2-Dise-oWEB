@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Pedido</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <ul>
+                    <li>
+                        <a class="nav-item" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="img/logo.png" alt="" width="60"></a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="info.html">Info</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page">
+        <header>
+            <h2 class="title">Dirección de envío</h2>
+        </header>
+        <form class="direccion-form" action="facturacion.html">
+            <div class="direccion-items">
+                <ul>
+                    <li>
+                        <div class="label">
+                            <label for="dirección">Dirección exacta</label>
+                        </div>
+                        <div>
+                            <input type="text" name="dirección" class="input-text-big" id="dirección"
+                                placeholder="Heredia, Santa Lucia 25 metros norte Salón Italia" maxlength="50" required>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label">
+                            <label for="username">Teléfono</label>
+                        </div>
+                        <div>
+                            <input type="tel" name="tel-contact" class="input-text-big" id="tel-contact"
+                                inputmode="numeric" placeholder="70007000" pattern="[\p{N}]+" 
+                                minlength="8" maxlength="8" required>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label">
+                            <label for="referencias">Referencias</label>
+                        </div>
+                        <div>
+                            <input type="" name="referencias" class="input-text-big" id="referencias" maxlength="50"
+                                required>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <input class="btn-design" type="submit" value="Continuar con mi orden">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <span class="derechos">Copyright© 2022 PizzaFast.</span>
+                </li>
+                <li>
+                    <a href="#aviso-legal"><span>Aviso legal</span></a>
+                </li>
+                <li>
+                    <a href="#site-map"><span>Mapa de sitio</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Ordenar</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <ul>
+                    <li>
+                        <a class="nav-item" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="img/logo.png" alt="" width="60"></a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="info.html">Info</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page">
+        <header>
+            <h2 class="title">Detalle de la orden</h2>
+        </header>
+        <div class="orden-img">
+            <div>
+                <img src="img/pizza1.png" alt="" width="350">
+            </div>
+        </div>
+        <div>
+            <h2 class="subtitle">Pizza jamón y queso</h2>
+            <div>
+                <p class="price">₡12.500</p>
+            </div>
+            <form action="pedido.html">
+                <div class="selects-container">
+                    <div class="select">
+                        <p class="phrase">Tamaño</p>
+                        <select name="tamaño" required>
+                            <option value="">Elige una opción</option>
+                            <option>6 porciones</opcion>
+                            <option>8 porciones</opcion>
+                            <option>12 porciones</opcion>
+                            <option>16 porciones</opcion>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <p class="phrase">Extra</p>
+                        <select name="extra">
+                            <option>Ninguno</opcion>
+                            <option>Borde de queso</opcion>
+                            <option>Carne de cerdo</opcion>
+                            <option>Hongos</opcion>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="btn">
+                        <input class="btn-design" type="submit" value="Continuar con mi orden">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <span class="derechos">Copyright© 2022 PizzaFast.</span>
+                </li>
+                <li>
+                    <a href="#aviso-legal"><span>Aviso legal</span></a>
+                </li>
+                <li>
+                    <a href="#site-map"><span>Mapa de sitio</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

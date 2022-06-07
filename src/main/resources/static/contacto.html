@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <ul>
+                    <li>
+                        <a class="nav-item" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="img/logo.png" alt="" width="60"></a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="info.html">Info</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page">
+        <header>
+            <h2 class="title">Contáctanos</h2>
+            <p class="phrase">Nos gustaría leer tu opinión sobre nosotros <br>
+                Puedes escribirnos ante cualquier consulta, opinión o recomendación <br>
+                Será un gusto conocer lo que piensas de nosotros
+            </p>
+        </header>
+        <form class="contactanos-form">
+            <div class="contactanos-items">
+                <ul>
+                    <li class="doble">
+                        <section class="doble-container">
+                            <div class="label">
+                                <label for="usermail">Correo</label>
+                            </div>
+                            <div>
+                                <input type="email" name="usermail" class="input-text-small" id="usermail" required>
+                            </div>
+                        </section>
+                        <section class="doble-container">
+                            <div class="label">
+                                <label for="username">Nombre</label>
+                            </div>
+                            <div>
+                                <input type="text" name="username" class="input-text-small" pattern="[\p{L} \-\.]+"
+                                    id="username" required>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="label">
+                                <label for="usermessage">Mensaje</label>
+                            </div>
+                            <textarea name="usermessage" id="usermessage" class="input-textarea" cols="59" rows="9"
+                                required></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <input class="btn-design" type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <span class="derechos">Copyright© 2022 PizzaFast.</span>
+                </li>
+                <li>
+                    <a href="#aviso-legal"><span>Aviso legal</span></a>
+                </li>
+                <li>
+                    <a href="#site-map"><span>Mapa de sitio</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

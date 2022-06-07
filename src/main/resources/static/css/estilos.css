@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* BOTONES */
+
+.btn {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-design {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    background: #8c0808;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+}
+
+.btn-design:hover {
+    background-color: #610707;
+    color: #F5F6EE;
+}
+
+/* TEXTOS */
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.phrase {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.label {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 20px;
+}
+
+input:not(:focus):invalid {
+    color: red;
+    outline-color: red;
+}
+
+/* FORMATO PAGINAS */
+
+.page {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 992px;
+    margin: auto;
+}
+
+/* INPUTS DOBLES Y SIMPLES */
+
+.normal {
+    display: inline;
+    padding: 0 25px;
+    padding-bottom: 50px;
+}
+
+.doble {
+    display: flex;
+    justify-content: center;
+}
+
+.doble-container {
+    padding: 15px 20px;
+}
+
+.input-text-big {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: 1px;
+    border-bottom: 2px solid #400E03;
+    height: 40px;
+    width: 360px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input-text-small {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: 1px;
+    border-bottom: 2px solid #400E03;
+    height: 40px;
+    width: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input-textarea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: 1px;
+    border-bottom: 2px solid #400E03;
+    height: 140px;
+    width: 360px;
+    padding-left: 10px;
+    padding-right: 10px;
+    resize: none;
+}
+
+/* EVITAR QUE EL CONTENIDO DE LOS FORMS SE SALGA */
+
+form {
+    overflow: hidden;
+}
+
+/* INICIA LA ESTRUCTURA */
+
+/* HEADER - NAV */
+
+.header {
+    height: 60px;
+    width: 100%;
+    background: #8c0808;
+    position: fixed;
+    top: 0;
+}
+
+.nav div {
+    line-height: 60px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 992px;
+    margin: auto;
+}
+
+.nav li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+
+.nav-item:hover {
+    border-radius: 8px;
+    background: #610707;
+}
+
+/* COVER */
+
+.cover {
+    padding-top: 60px;
+    max-width: 992px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+}
+
+.cover div {
+    padding-bottom: 50px;
+}
+
+/* MENU */
+
+.items ul {
+    text-align: center;
+}
+
+.items ul li {
+    display: inline-block;
+}
+
+.item-container {
+    padding: 41px 0;
+    border-radius: 6px;
+}
+
+.item-container img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* CONTACTO */
+
+.contactanos-items ul {
+    text-align: center;
+    list-style: none;
+}
+
+.contactanos-items ul li {
+    padding-top: 25px;
+}
+
+.contactanos-form {
+    padding-top: 30px;
+}
+
+.contactanos-items {
+    text-align: center;
+}
+
+/* INFO */
+
+.sobreNosotros div {
+    padding: 25px;
+}
+
+.sobreNosotros iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* ORDEN */
+
+.orden-img {
+    text-align: center;
+}
+
+.price {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+}
+
+.selects-container {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.select {
+    display: inline-block;
+    padding: 25px 15px;
+}
+
+.selects-container select {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+}
+
+/* DIRECCION ORDEN */
+
+.direccion-items ul {
+    text-align: center;
+}
+
+.direccion-items ul li {
+    display: inline;
+    padding: 0 25px;
+    padding-bottom: 50px;
+}
+
+/* FACTURACION */
+
+.fact-items ul {
+    text-align: center;
+}
+
+/* DETALLE ORDEN */
+
+.detalle-orden-items {
+    display: flex;
+    justify-content: center;
+}
+
+.detalle-orden-items ul {
+    text-align: center;
+}
+
+.detalle-orden-items ul li {
+    display: inline;
+    padding: 0 25px;
+    padding-bottom: 50px;
+}
+
+.detalle-orden-items h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.detalle-orden-img {
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 60px;
+    width: 100%;
+    background: #161616;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-container ul {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 60px;
+}
+
+.footer-container li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer-container li a:hover {
+    text-decoration: underline;
+}
+
+.derechos {
+    color: rgb(212, 212, 212);
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+}
+

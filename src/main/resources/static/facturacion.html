@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/logo.png">
+        <title>Facturación</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <nav class="nav">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="nav-item" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="menu.html">Menú</a>
+                        </li>
+                        <li>
+                            <a href="index.html"><img src="img/logo.png" alt="" width="60"></a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="info.html">Info</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="page">
+            <header>
+                <h2 class="title">Facturación</h2>
+            </header>
+            <form action="detalle-orden.html">
+                <div class="fact-items">
+                    <ul>
+                        <li class="normal">
+                            <div class="label">
+                                <label for="cc-number">Número de tarjeta</label>
+                            </div>
+                            <div>
+                                <input id="cc-number" name="cc-number" class="input-text-big" inputmode="numeric"
+                                       maxlength="19" minlength="19" pattern="[\p{N}\-]+" placeholder="0000-0000-0000-0000"
+                                       required>
+                            </div>
+                        </li>
+                        <li class="normal">
+                            <div class="label">
+                                <label for="cc-name">Nombre titular</label>
+                            </div>
+                            <div>
+                                <input id="cc-name" name="cc-name" class="input-text-big" maxlength="50"
+                                       pattern="[\p{L} \-\.]+" required>
+                            </div>
+                        </li>
+                        <li class="doble">
+                            <section class="doble-container">
+                                <div class="label">
+                                    <label for="cc-exp">Fecha de expiración</label>
+                                </div>
+                                <div>
+                                    <input type="month" name="fecha" class="input-text-small" id="fecha"
+                                           min="2022-06" required>
+                                </div>
+                            </section>
+                            <section class="doble-container">
+                                <div class="label">
+                                    <label for="cc-csc">Código de seguridad</label>
+                                </div>
+                                <div>
+                                    <input id="cc-csc" name="cc-csc" class="input-text-small" inputmode="numeric"
+                                           minlength="3" maxlength="3" pattern="[\p{N}]+" required>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <input class="btn-design" type="submit" value="Completar pedido">
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <ul>
+                    <li>
+                        <span class="derechos">Copyright© 2022 PizzaFast.</span>
+                    </li>
+                    <li>
+                        <a href="#aviso-legal"><span>Aviso legal</span></a>
+                    </li>
+                    <li>
+                        <a href="#site-map"><span>Mapa de sitio</span></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
